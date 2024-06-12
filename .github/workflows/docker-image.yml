@@ -17,4 +17,5 @@ jobs:
     - name: Build the Docker image
       run: |
         docker build . --file Dockerfile --tag registry.cn-beijing.aliyuncs.com/yican/flink:1.18
+        docker login --username=yihaiyang@manwei --password=manwei@123 registry.cn-beijing.aliyuncs.com
         docker push registry.cn-beijing.aliyuncs.com/yican/flink:1.18
