@@ -21,3 +21,4 @@ jobs:
         docker pull apache/flink:1.18.1-scala_2.12
         docker login REGISTRY_SERVER
         docker push IMAGE_TAG
+        docker logout REGISTRY_SERVER
